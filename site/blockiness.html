@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Блочность · Заявки 1075–1077</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="page-header">
+  <div class="page-header-inner">
+    <a class="brand" href="overview.html">Заявки 1075–1077 · Kandinsky — движения</a>
+    <span class="page-title">БЛОЧНОСТЬ</span>
+  </div>
+</header>
+
+<div class="layout">
+  <nav class="toc site-nav" aria-label="Страницы сайта">
+    <div class="toc-title">СТРАНИЦЫ САЙТА</div>
+    <ol>
+      <li><a href="overview.html">Обзор проекта</a></li>
+      <li><a href="criteria.html">Правила отбора видео</a></li>
+      <li><a href="blockiness.html" class="active">Блочность</a></li>
+      <li><a href="request-1075.html">Заявка 1075 — Повседневность</a></li>
+      <li><a href="request-1076.html">Заявка 1076 — Танцы</a></li>
+      <li><a href="request-1077.html">Заявка 1077 — Спорт</a></li>
+    </ol>
+  </nav>
+
+  <main>
+
+    <section id="definition">
+      <p class="eyebrow">ТЕРМИН</p>
+      <h2>Блочность</h2>
+      <p>Артефакт сжатия видео (макроблоки, пикселизация): из-за нехватки битрейта кадр распадается на отчётливые квадратные сетки или пиксели вместо плавного изображения.</p>
+      <figure style="margin:0 0 8px;">
+        <img src="assets/blockiness-comparison.png" alt="Слева — кадр без блочности, справа — кадр с блочностью" style="width:100%; display:block; border-radius:var(--radius-m); border:1px solid var(--line);">
+      </figure>
+      <p class="quiet">Слева — без блочности, справа — с блочностью (реальный пример из переписки с заказчиком).</p>
+    </section>
+
+    <section id="rule">
+      <p class="eyebrow">ГЛАВНОЕ ПРАВИЛО</p>
+      <h2>Когда видео не подлежит сбору сразу</h2>
+      <div class="callout danger">
+        <div class="callout-title">⚠ Блочность на самом ГО</div>
+        <p>Если блочность есть <strong>на самом ГО</strong> (одежда, кожа, аксессуары) или на предмете, с которым ГО взаимодействует, — видео не подлежит сбору, дальше можно не проверять.</p>
+      </div>
+      <p>Если на ГО блочности нет — переходим к чек-листу ниже. Он про блочность на фоне / рядом с ГО.</p>
+    </section>
+
+    <section id="checklist">
+      <p class="eyebrow">ЧЕК-ЛИСТ</p>
+      <h2>Проверка по 5 пунктам</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>Критерий</th><th class="za"><strong>За разметку</strong></th><th class="protiv"><strong>Против разметки</strong></th></tr></thead>
+          <tbody>
+            <tr><td class="num">1</td><td>Расположение в кадре</td><td class="za">По краям / в углах</td><td class="protiv">По центру кадра</td></tr>
+            <tr><td class="num">2</td><td>Контрастность блоков</td><td class="za">Тона близкие к фону</td><td class="protiv">Контрастные по тону/цвету</td></tr>
+            <tr><td class="num">3</td><td>Площадь</td><td class="za">Меньше 5% кадра</td><td class="protiv">Больше 5% кадра</td></tr>
+            <tr><td class="num">4</td><td>Постоянство</td><td class="za">Появляются и пропадают по ходу видео</td><td class="protiv">Присутствуют на протяжении всего видео</td></tr>
+            <tr><td class="num">5</td><td>Заметность</td><td class="za">Не видны с первого раза</td><td class="protiv">Заметны сразу</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>Правило подсчёта:</strong> если по 3 из 5 пунктов ответ «против» — видео в работу не берём. Если «против» только 1, а остальные «за» — берём. Размер блоков значения не имеет.</p>
+    </section>
+
+    <section id="worked-example">
+      <p class="eyebrow">РАЗОБРАННЫЕ ПРИМЕРЫ</p>
+      <h2>Проверка на практике</h2>
+      <div class="example-grid">
+        <div>
+          <div class="example-card pass" style="margin-bottom:14px;">
+            <video class="media" controls preload="metadata">
+              <source src="assets/1075-blockiness-example.mp4" type="video/mp4">
+            </video>
+            <div class="status">✅ Подлежит сбору</div>
+            <div class="body">
+              <p>Мыльность («блочность») присутствует на фоне — в момент, когда движение руками показано крупным планом.</p>
+            </div>
+          </div>
+          <div class="table-wrap compact">
+            <table>
+              <thead><tr><th>#</th><th>Критерий</th><th>Оценка</th><th>Вердикт</th></tr></thead>
+              <tbody>
+                <tr><td class="num">1</td><td>Расположение</td><td>Не по центру</td><td><span class="verdict za">✓</span></td></tr>
+                <tr><td class="num">2</td><td>Контрастность</td><td>Не контрастно</td><td><span class="verdict za">✓</span></td></tr>
+                <tr><td class="num">3</td><td>Площадь</td><td>Больше 5%</td><td><span class="verdict protiv">✕</span></td></tr>
+                <tr><td class="num">4</td><td>Постоянство</td><td>Не на протяжении всего видео</td><td><span class="verdict za">✓</span></td></tr>
+                <tr><td class="num">5</td><td>Заметность</td><td>Заметны сразу</td><td><span class="verdict protiv">✕</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="callout ok">
+            <div class="callout-title">✓ Итог: видео подлежит сбору</div>
+            <p>3 из 5 критериев — «за» разметку (только 2 «против»), значит видео проходит проверку на блочность.</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="example-card fail" style="margin-bottom:14px;">
+            <iframe class="media" src="https://www.youtube.com/embed/v_lq02RTL34" title="Пример проверки на блочность" allowfullscreen></iframe>
+            <div class="status">❌ Не подходит</div>
+            <div class="body">
+              <p><strong>Отведение ноги в сторону стоя</strong> — на самом ГО блочность почти незаметна, но на фоне (стена) обнаружено крупное расслоение.</p>
+            </div>
+          </div>
+          <div class="table-wrap compact">
+            <table>
+              <thead><tr><th>#</th><th>Критерий</th><th>Оценка</th><th>Вердикт</th></tr></thead>
+              <tbody>
+                <tr><td class="num">1</td><td>Расположение</td><td>По краям кадра</td><td><span class="verdict za">✓</span></td></tr>
+                <tr><td class="num">2</td><td>Контрастность</td><td>Тона близки к фону</td><td><span class="verdict za">✓</span></td></tr>
+                <tr><td class="num">3</td><td>Площадь</td><td>Больше 5%</td><td><span class="verdict protiv">✕</span></td></tr>
+                <tr><td class="num">4</td><td>Постоянство</td><td>На протяжении всего видео</td><td><span class="verdict protiv">✕</span></td></tr>
+                <tr><td class="num">5</td><td>Заметность</td><td>Заметны сразу</td><td><span class="verdict protiv">✕</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="callout danger">
+            <div class="callout-title">✕ Итог: видео не подходит</div>
+            <p>3 из 5 критериев — «против» разметки, значит видео не проходит проверку на блочность. Высокое заявленное разрешение (4K) не спасает: блочность оценивают по всему кадру, включая фон, а не только по формальному качеству видео.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hd-vs-blockiness">
+      <p class="eyebrow">FAQ</p>
+      <h2>Разрешение и блочность — не одно и то же</h2>
+      <div class="callout info">
+        <div class="callout-title">ℹ Вопрос: разрешение HD и качество, требуемое к видео, — это одно и то же?</div>
+        <p><strong>Ответ заказчика:</strong> нет. В инструкции есть два разных пункта: один отвечает за разрешение, второй (этот чек-лист) — за качество изображения. По чек-листу нужно анализировать <strong>самое лучшее видео</strong>: если на ГО нет блочности — дальше проверяем весь кадр по чек-листу; если набралось 3 пункта «против» — видео по качеству не подходит. Остальные 4 видео так детально не проверяем — важно только, чтобы само действие было идентичным.</p>
+        <p>Видео с таким качеством и разрешением называется <strong>эталонным</strong> — по нему сверяют движения на остальных видео, и оно же идёт в поле 1.</p>
+      </div>
+      <p class="quiet">Вывод: переключаемое HD-качество в видеоисточнике и прохождение чек-листа по блочности — две независимые проверки. Один факт не гарантирует другой.</p>
+    </section>
+
+  </main>
+
+  <nav class="toc page-nav" aria-label="На этой странице">
+    <div class="toc-title">НА ЭТОЙ СТРАНИЦЕ</div>
+    <ol>
+      <li><a href="#definition">Блочность</a></li>
+      <li><a href="#rule">Главное правило</a></li>
+      <li><a href="#checklist">Чек-лист</a></li>
+      <li><a href="#worked-example">Разобранные примеры</a></li>
+      <li><a href="#hd-vs-blockiness">HD и блочность</a></li>
+    </ol>
+  </nav>
+</div>
+
+</body>
+</html>
