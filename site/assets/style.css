@@ -282,7 +282,9 @@ th.field, td.field{background:#EDEEEA;}
 
 /* ---------- EXAMPLE CARDS ---------- */
 .example-grid{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:18px;}
-@media (max-width:640px){.example-grid{grid-template-columns:1fr;}}
+.example-grid.cols-3{grid-template-columns:1fr 1fr 1fr;}
+@media (max-width:640px){.example-grid, .example-grid.cols-3{grid-template-columns:1fr;}}
+@media (max-width:900px){.example-grid.cols-3{grid-template-columns:1fr 1fr;}}
 .example-card{
   border:1px solid var(--line);
   border-radius:var(--radius-m);
@@ -303,6 +305,7 @@ th.field, td.field{background:#EDEEEA;}
 .example-card video, .example-card img{display:block; width:100%; height:auto;}
 .example-card video.portrait{width:auto; max-width:100%; max-height:460px; margin:0 auto; background:#000;}
 .example-card iframe.media{width:100%; aspect-ratio:16/9; border:0; background:#000;}
+.example-card iframe.media.portrait{width:auto; height:460px; max-width:100%; aspect-ratio:9/16; margin:0 auto; display:block;}
 .table-wrap.compact table{font-size:12.5px;}
 .table-wrap.compact th, .table-wrap.compact td{padding:8px 10px;}
 
