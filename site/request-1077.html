@@ -17,6 +17,13 @@
   </div>
 </header>
 
+<div class="search-bar">
+  <div class="search-bar-inner">
+    <input type="search" id="site-search-input" class="search-input" placeholder="Поиск по сайту: движение, критерий, правило…" autocomplete="off" aria-label="Поиск по сайту">
+    <div id="site-search-results" class="search-results" role="listbox" hidden></div>
+  </div>
+</div>
+
 <div class="layout">
   <nav class="toc site-nav" aria-label="Страницы сайта">
     <div class="toc-title">СТРАНИЦЫ САЙТА</div>
@@ -171,5 +178,7 @@
   </nav>
 </div>
 
+<script src="assets/search-index.js"></script>
+<script src="assets/search.js" defer></script>
 </body>
 </html>

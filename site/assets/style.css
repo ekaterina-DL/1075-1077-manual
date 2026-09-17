@@ -109,6 +109,58 @@ a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid v
   font-family:var(--mono); font-size:12.5px; letter-spacing:.03em; color:#BFEAE2;
 }
 
+/* ---------- ПОИСК ПО САЙТУ ---------- */
+.search-bar{
+  background:var(--surface);
+  border-bottom:1px solid var(--line);
+  padding:14px 28px;
+}
+.search-bar-inner{
+  max-width:1320px; margin:0 auto;
+  position:relative;
+}
+.search-input{
+  width:100%; max-width:520px;
+  box-sizing:border-box;
+  font-family:var(--sans);
+  font-size:13.5px;
+  padding:9px 12px;
+  border:1px solid var(--line);
+  border-radius:var(--radius-s);
+  background:var(--bg);
+  color:var(--ink);
+}
+.search-input:focus{
+  outline:none;
+  border-color:var(--teal);
+  background:var(--surface);
+}
+.search-results{
+  position:absolute;
+  top:calc(100% + 6px);
+  left:0;
+  width:100%; max-width:520px;
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:var(--radius-m);
+  box-shadow:0 8px 24px rgba(23,27,35,.12);
+  max-height:380px;
+  overflow-y:auto;
+  z-index:80;
+}
+.search-item{
+  display:block;
+  padding:9px 14px;
+  text-decoration:none;
+  color:var(--ink);
+  border-bottom:1px solid var(--line);
+}
+.search-item:last-child{border-bottom:none;}
+.search-item:hover, .search-item.active{background:var(--teal-soft);}
+.search-item .t{display:block; font-size:13.5px; font-weight:500;}
+.search-item .p{display:block; font-family:var(--mono); font-size:11px; color:var(--ink-faint); margin-top:2px;}
+.search-empty{padding:12px 14px; font-size:13px; color:var(--ink-soft);}
+
 /* ---------- LAYOUT (слева — страницы сайта, справа — разделы этой страницы) ---------- */
 .layout{
   max-width:1320px;
@@ -256,6 +308,9 @@ th.tagme, td.tagme{width:260px;}
 td.tagme code{display:inline-block; word-break:break-all; overflow-wrap:anywhere;}
 th.protiv, td.protiv{background:var(--red-soft);}
 th.field, td.field{background:#EDEEEA;}
+tr[id]{scroll-margin-top:24px;}
+tr[id]:target{outline:2px solid var(--teal); outline-offset:-2px;}
+h3[id]{scroll-margin-top:20px;}
 
 /* ---------- TAGS / BADGES ---------- */
 .tag{
