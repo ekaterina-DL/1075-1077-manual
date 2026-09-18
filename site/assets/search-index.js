@@ -90,7 +90,7 @@ window.SITE_SEARCH_INDEX = [
   { page: "blockiness.html", anchor: "worked-example", title: "Разобранные примеры проверки на блочность", section: "Блочность",
     keywords: "отведение ноги в сторону стоя стена фон вердикт мыльность на фоне" },
   { page: "blockiness.html", anchor: "hd-vs-blockiness", title: "HD-разрешение и блочность — не одно и то же", section: "Блочность",
-    keywords: "hd качество разрешение эталонное видео faq независимые проверки" },
+    keywords: "hd качество разрешение эталонное видео faq независимые проверки переключение качества путаница реальная ошибка" },
 
   // ---------- request-1075.html ----------
   { page: "request-1075.html", anchor: "about", title: "О заявке 1075 (Повседневность)", section: "Заявка 1075",
