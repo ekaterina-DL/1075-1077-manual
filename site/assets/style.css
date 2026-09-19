@@ -374,6 +374,11 @@ h3[id]{scroll-margin-top:20px;}
 .example-card .media{display:block; width:100%; border-bottom:1px solid var(--line); background:#000;}
 .example-card video, .example-card img{display:block; width:100%; height:auto;}
 .example-card video.portrait{width:auto; max-width:100%; max-height:460px; margin:0 auto; background:#000;}
+.example-card.wide{grid-column:1 / -1;}
+.media-pair{display:flex; flex-wrap:wrap; justify-content:center; align-items:flex-end; gap:12px; padding:12px; background:#000; border-bottom:1px solid var(--line);}
+.media-pair figure{margin:0; max-width:100%;}
+.media-pair video{display:block; width:auto; height:260px; max-width:100%; background:#000;}
+.media-pair figcaption{color:#D5DAD8; font-size:12.5px; margin-top:6px; text-align:center;}
 .example-card iframe.media{width:100%; aspect-ratio:16/9; border:0; background:#000;}
 .example-card iframe.media.portrait{width:auto; height:460px; max-width:100%; aspect-ratio:9/16; margin:0 auto; display:block;}
 .table-wrap.compact table{font-size:12.5px;}
