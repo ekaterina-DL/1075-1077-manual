@@ -94,7 +94,7 @@ window.SITE_SEARCH_INDEX = [
   { page: "criteria.html", anchor: "crit-blochnost", title: "Критерий: блочность", section: "Критерии отбора",
     keywords: "чек-лист 2 против 5 против эталонное видео" },
   { page: "criteria.html", anchor: "corner-cases", title: "Корнер-кейсы", section: "Критерии отбора",
-    keywords: "человек сильно перекрыт предметом виден только ниже пояса не подходит" },
+    keywords: "человек сильно перекрыт предметом виден только ниже пояса не подходит действие слишком простое ходьба" },
 
   // ---------- blockiness.html ----------
   { page: "blockiness.html", anchor: "definition", title: "Что такое блочность", section: "Блочность",
@@ -186,7 +186,7 @@ window.SITE_SEARCH_INDEX = [
   { page: "request-1077.html", anchor: "specifics", title: "Особенности отбора для спорта", section: "Заявка 1077",
     keywords: "вид спорта не движение плавание футбол гребля повторное движение нельзя" },
   { page: "request-1077.html", anchor: "practice", title: "Разбор примеров (1077)", section: "Заявка 1077",
-    keywords: "ведение мяча поднятие штанги" },
+    keywords: "ведение мяча поднятие штанги круговые вращения плечами приседание руки вытянуты сложены не совпадают" },
   { page: "request-1077.html", anchor: "mistakes", title: "Частые ошибки (1077)", section: "Заявка 1077",
     keywords: "вид спорта вместо движения повтор люди издалека блочность" }
 ];
