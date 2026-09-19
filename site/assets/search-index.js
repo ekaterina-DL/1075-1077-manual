@@ -48,7 +48,7 @@ window.SITE_SEARCH_INDEX = [
   { page: "criteria.html", anchor: "criteria", title: "Критерии отбора видео — таблица", section: "Правила отбора видео",
     keywords: "подходит не подходит таблица критериев" },
   { page: "criteria.html", anchor: "crit-dlitelnost-video", title: "Критерий: длительность видео", section: "Критерии отбора",
-    keywords: "30 минут длиннее" },
+    keywords: "30 минут длиннее короче 5 секунд не подходят" },
   { page: "criteria.html", anchor: "crit-dlitelnost-dvizheniya", title: "Критерий: длительность движения", section: "Критерии отбора",
     keywords: "5 до 60 секунд короче длиннее" },
   { page: "criteria.html", anchor: "crit-skleyki", title: "Критерий: склейки", section: "Критерии отбора",
