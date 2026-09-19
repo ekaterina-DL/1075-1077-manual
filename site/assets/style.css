@@ -273,6 +273,14 @@ code{
 .callout.danger .callout-title{color:var(--red);}
 .callout.ok{border-left-color:var(--ok); background:var(--ok-soft);}
 .callout.ok .callout-title{color:var(--ok);}
+.callout .callout-title.hl, .callout.info .callout-title.hl{
+  display:inline-flex;
+  background:var(--teal);
+  color:#fff;
+  padding:5px 12px;
+  border-radius:var(--radius-s);
+  margin-bottom:10px;
+}
 .callout.quote{border-left-color:var(--ink-faint);}
 .callout.quote .who{font-weight:600; color:var(--ink);}
 
