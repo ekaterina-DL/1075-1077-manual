@@ -212,6 +212,9 @@ nav.toc a.active{
   border-radius:var(--radius-s);
 }
 nav.toc .toc-group{margin-top:14px; padding-top:10px; border-top:1px solid var(--line);}
+nav.toc li > ol{margin:2px 0 6px;}
+nav.toc li > ol a{font-size:12.5px; padding:4px 0 4px 34px;}
+nav.toc li > ol a::before{content:"–"; left:20px; top:4px;}
 
 main{min-width:0; max-width:760px;}
 section{margin-bottom:56px; scroll-margin-top:20px;}
@@ -316,7 +319,7 @@ th.tagme, td.tagme{width:260px;}
 td.tagme code{display:inline-block; word-break:break-all; overflow-wrap:anywhere;}
 th.protiv, td.protiv{background:var(--red-soft);}
 th.field, td.field{background:#EDEEEA;}
-.table-split table{table-layout:fixed;}
+.table-split table, .table-wrap.fixed table{table-layout:fixed;}
 .table-split > .table-wrap{margin-bottom:0;}
 .table-split > .table-wrap:first-child{border-bottom-left-radius:0; border-bottom-right-radius:0;}
 .table-split > .table-wrap:last-child{border-top-left-radius:0; border-top-right-radius:0; margin-bottom:20px;}
