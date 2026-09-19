@@ -139,8 +139,36 @@
     <section id="criteria">
       <p class="eyebrow">КРИТЕРИИ</p>
       <h2>Критерии отбора видео</h2>
+      <p>Критерии сгруппированы по смыслу — от самого важного к техническим деталям. Слева — что подходит, справа — что не подходит.</p>
+
+      <h3 id="crit-g-identity">Главное: идентичность и уникальность движения</h3>
+      <div class="table-wrap fixed">
+        <table>
+          <colgroup><col style="width:22%"><col style="width:39%"><col style="width:39%"></colgroup>
+          <thead><tr><th>Параметр</th><th class="za">Подходит</th><th class="protiv">Не подходит</th></tr></thead>
+          <tbody>
+            <tr id="crit-identichnost"><td>Идентичность движения</td><td class="za">✅ На всех видео <strong>совпадает и название, и сама траектория движения</strong> — руки, ноги, сторона тела, амплитуда (например, везде правая нога; замах сверху вниз, а не сверху вбок; нога поднимается на одну и ту же высоту).</td><td class="protiv">❌ <strong>Совпадает только название</strong>, а траектория, поза, сторона тела или амплитуда отличаются (например, где-то левая нога, где-то правая; где-то замах сверху вниз, где-то вбок; где-то нога поднимается заметно выше, чем на остальных видео).</td></tr>
+            <tr id="crit-melkaya-motorika"><td>Мелкая моторика</td><td class="za">✅ Все 5 видео показывают <strong>полностью, чётко идентичное движение</strong>.</td><td class="protiv">❌ Движения похожи, но <strong>не идентичны на 100%</strong> — такие <strong>лучше вообще не собирать</strong>.</td></tr>
+            <tr id="crit-povtory"><td>Повторы</td><td class="za">✅ Движение <strong>впервые</strong> собирается в проекте.</td><td class="protiv">❌ Такое же движение <strong>уже было собрано</strong> в другом задании — даже с другим набором видео.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 id="crit-g-reference">Эталонное видео (поле 1): качество</h3>
+      <div class="table-wrap fixed">
+        <table>
+          <colgroup><col style="width:22%"><col style="width:39%"><col style="width:39%"></colgroup>
+          <thead><tr><th>Параметр</th><th class="za">Подходит</th><th class="protiv">Не подходит</th></tr></thead>
+          <tbody>
+            <tr id="crit-blochnost"><td>Блочность</td><td class="za">✅ Эталонное видео (поле 1) <strong>проходит чек-лист</strong> — <strong>не больше 2 «против» из 5</strong>.</td><td class="protiv">❌ Эталонное видео <strong>не проходит чек-лист</strong> — <strong>3 и более «против» из 5</strong>. См. страницу «<a href="blockiness.html">Блочность</a>».</td></tr>
+            <tr id="crit-ramki"><td>Рамки</td><td class="za">✅ Эталонное видео (поле 1) — <strong>без декоративной рамки</strong> по краю кадра.</td><td class="protiv">❌ На эталонном видео (поле 1) <strong>есть рамка</strong> (декоративная обводка по краю кадра).</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 id="crit-g-duration">Длительность и склейки</h3>
       <div class="table-split">
-      <div class="table-wrap">
+      <div class="table-wrap fixed">
         <table>
           <colgroup><col style="width:22%"><col style="width:39%"><col style="width:39%"></colgroup>
           <thead><tr><th>Параметр</th><th class="za">Подходит</th><th class="protiv">Не подходит</th></tr></thead>
@@ -152,7 +180,6 @@
           </tbody>
         </table>
       </div>
-
       <div class="table-media">
         <div class="example-grid">
           <figure style="margin:0;">
@@ -165,28 +192,42 @@
           </figure>
         </div>
       </div>
-
-      <div class="table-wrap">
+      <div class="table-wrap fixed">
         <table>
           <colgroup><col style="width:22%"><col style="width:39%"><col style="width:39%"></colgroup>
+          <tbody>
+            <tr id="crit-zoom"><td>Приближение / отдаление камеры (зум)</td><td class="za">✅ Камера приближается или отдаляется, но кадр <strong>не меняется</strong> — это <strong>не причина отклонять</strong> видео. Склейкой такой зум не считается.</td><td class="protiv">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+
+      <h3 id="crit-g-people">Человек в кадре</h3>
+      <div class="table-wrap fixed">
+        <table>
+          <colgroup><col style="width:22%"><col style="width:39%"><col style="width:39%"></colgroup>
+          <thead><tr><th>Параметр</th><th class="za">Подходит</th><th class="protiv">Не подходит</th></tr></thead>
           <tbody>
             <tr id="crit-razlichimost-lyudey"><td>Различимость людей</td><td class="za">✅ Человек, выполняющий движение, <strong>хорошо виден и различим</strong>, <strong>виден полностью</strong>.</td><td class="protiv">❌ Человек <strong>снят издалека</strong>; один человек <strong>теряется в толпе</strong> (например, трибуны на матче); в кадре видна <strong>только часть тела</strong> (например, только ноги).</td></tr>
             <tr id="crit-neskolko-chelovek"><td>Несколько человек в кадре</td><td class="za">✅ В кадре несколько человек, но <strong>хотя бы один чётко выполняет движение</strong>, <strong>остальные — просто на фоне</strong>.</td><td class="protiv">❌ <strong>Непонятно, кто</strong> из людей в кадре выполняет движение.</td></tr>
             <tr id="crit-tekst-predmety"><td>Текст / предметы / выход за кадр</td><td class="za">✅ <strong>Небольшое перекрытие</strong> текстом или предметом; <strong>частичный, кратковременный выход</strong> человека за кадр.</td><td class="protiv">❌ Человек <strong>сильно перекрыт</strong> предметом или наложением; <strong>надолго или полностью пропадает</strong> из кадра.</td></tr>
             <tr id="crit-votermarki"><td>Вотермарки</td><td class="za">✅ Вотермарка есть, но <strong>не перекрывает человека</strong>, выполняющего движение.</td><td class="protiv">❌ Вотермарка <strong>перекрывает самого человека</strong> или его движение.</td></tr>
-            <tr id="crit-ramki"><td>Рамки</td><td class="za">✅ Эталонное видео (поле 1) — <strong>без декоративной рамки</strong> по краю кадра.</td><td class="protiv">❌ На эталонном видео (поле 1) <strong>есть рамка</strong> (декоративная обводка по краю кадра).</td></tr>
-            <tr id="crit-kollazhi"><td>Коллажи</td><td class="za">✅ Обычное видео — <strong>один кадр, одна съёмка</strong>.</td><td class="protiv">❌ <strong>Видео-коллаж</strong> (несколько роликов или кадров в одном изображении) — такое не берём.</td></tr>
-            <tr id="crit-skorost"><td>Скорость съёмки</td><td class="za">✅ Человек двигается в своём <strong>естественном темпе</strong> — быстро или медленно, даже если на разных видео комплекта темп отличается.</td><td class="protiv">❌ Само видео <strong>искусственно ускорено или замедлено</strong> при монтаже (речь про скорость воспроизведения ролика, а не про то, как быстро или медленно двигается человек). Признак ускорения — <strong>рваные, дёрганные движения</strong>.</td></tr>
-            <tr id="crit-rakurs"><td>Ракурс съёмки</td><td class="za">✅ Любой — <strong>ракурс значения не имеет</strong>.</td><td class="protiv">—</td></tr>
-            <tr id="crit-zoom"><td>Приближение / отдаление камеры (зум)</td><td class="za">✅ Камера приближается или отдаляется, но кадр <strong>не меняется</strong> — это <strong>не причина отклонять</strong> видео. Склейкой такой зум не считается.</td><td class="protiv">—</td></tr>
-            <tr id="crit-identichnost"><td>Идентичность движения</td><td class="za">✅ На всех видео <strong>совпадает и название, и сама траектория движения</strong> — руки, ноги, сторона тела, амплитуда (например, везде правая нога; замах сверху вниз, а не сверху вбок; нога поднимается на одну и ту же высоту).</td><td class="protiv">❌ <strong>Совпадает только название</strong>, а траектория, поза, сторона тела или амплитуда отличаются (например, где-то левая нога, где-то правая; где-то замах сверху вниз, где-то вбок; где-то нога поднимается заметно выше, чем на остальных видео).</td></tr>
-            <tr id="crit-povtory"><td>Повторы</td><td class="za">✅ Движение <strong>впервые</strong> собирается в проекте.</td><td class="protiv">❌ Такое же движение <strong>уже было собрано</strong> в другом задании — даже с другим набором видео.</td></tr>
-            <tr id="crit-melkaya-motorika"><td>Мелкая моторика</td><td class="za">✅ Все 5 видео показывают <strong>полностью, чётко идентичное движение</strong>.</td><td class="protiv">❌ Движения похожи, но <strong>не идентичны на 100%</strong> — такие <strong>лучше вообще не собирать</strong>.</td></tr>
-            <tr id="crit-proishozhdenie"><td>Происхождение видео</td><td class="za">✅ Видео снято <strong>реальной камерой, реальными людьми</strong>.</td><td class="protiv">❌ Видео <strong>сгенерировано или обработано при помощи ИИ</strong>.</td></tr>
-            <tr id="crit-blochnost"><td>Блочность</td><td class="za">✅ Эталонное видео (поле 1) <strong>проходит чек-лист</strong> — <strong>не больше 2 «против» из 5</strong>.</td><td class="protiv">❌ Эталонное видео <strong>не проходит чек-лист</strong> — <strong>3 и более «против» из 5</strong>. См. страницу «<a href="blockiness.html">Блочность</a>».</td></tr>
           </tbody>
         </table>
       </div>
+
+      <h3 id="crit-g-shooting">Съёмка и обработка видео</h3>
+      <div class="table-wrap fixed">
+        <table>
+          <colgroup><col style="width:22%"><col style="width:39%"><col style="width:39%"></colgroup>
+          <thead><tr><th>Параметр</th><th class="za">Подходит</th><th class="protiv">Не подходит</th></tr></thead>
+          <tbody>
+            <tr id="crit-rakurs"><td>Ракурс съёмки</td><td class="za">✅ Любой — <strong>ракурс значения не имеет</strong>.</td><td class="protiv">—</td></tr>
+            <tr id="crit-skorost"><td>Скорость съёмки</td><td class="za">✅ Человек двигается в своём <strong>естественном темпе</strong> — быстро или медленно, даже если на разных видео комплекта темп отличается.</td><td class="protiv">❌ Само видео <strong>искусственно ускорено или замедлено</strong> при монтаже (речь про скорость воспроизведения ролика, а не про то, как быстро или медленно двигается человек). Признак ускорения — <strong>рваные, дёрганные движения</strong>.</td></tr>
+            <tr id="crit-kollazhi"><td>Коллажи</td><td class="za">✅ Обычное видео — <strong>один кадр, одна съёмка</strong>.</td><td class="protiv">❌ <strong>Видео-коллаж</strong> (несколько роликов или кадров в одном изображении) — такое не берём.</td></tr>
+            <tr id="crit-proishozhdenie"><td>Происхождение видео</td><td class="za">✅ Видео снято <strong>реальной камерой, реальными людьми</strong>.</td><td class="protiv">❌ Видео <strong>сгенерировано или обработано при помощи ИИ</strong>.</td></tr>
+          </tbody>
+        </table>
       </div>
 
       <h3 id="corner-cases">Корнер-кейсы</h3>
@@ -208,7 +249,16 @@
     <div class="toc-title">НА ЭТОЙ СТРАНИЦЕ</div>
     <ol>
       <li><a href="#task-format">Формат задания</a></li>
-      <li><a href="#criteria">Критерии отбора</a></li>
+      <li><a href="#criteria">Критерии отбора</a>
+        <ol>
+          <li><a href="#crit-g-identity">Главное: идентичность</a></li>
+          <li><a href="#crit-g-reference">Эталонное видео (поле 1)</a></li>
+          <li><a href="#crit-g-duration">Длительность и склейки</a></li>
+          <li><a href="#crit-g-people">Человек в кадре</a></li>
+          <li><a href="#crit-g-shooting">Съёмка и обработка</a></li>
+          <li><a href="#corner-cases">Корнер-кейсы</a></li>
+        </ol>
+      </li>
     </ol>
   </nav>
 </div>
