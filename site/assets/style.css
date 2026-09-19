@@ -316,6 +316,11 @@ th.tagme, td.tagme{width:260px;}
 td.tagme code{display:inline-block; word-break:break-all; overflow-wrap:anywhere;}
 th.protiv, td.protiv{background:var(--red-soft);}
 th.field, td.field{background:#EDEEEA;}
+.table-split table{table-layout:fixed;}
+.table-split > .table-wrap{margin-bottom:0;}
+.table-split > .table-wrap:first-child{border-bottom-left-radius:0; border-bottom-right-radius:0;}
+.table-split > .table-wrap:last-child{border-top-left-radius:0; border-top-right-radius:0; margin-bottom:20px;}
+.table-split > .table-media{background:var(--surface); border-left:1px solid var(--line); border-right:1px solid var(--line); padding:16px 14px;}
 tr[id]{scroll-margin-top:24px;}
 tr[id]:target{outline:2px solid var(--teal); outline-offset:-2px;}
 h3[id]{scroll-margin-top:20px;}
