@@ -139,13 +139,36 @@
     <section id="criteria">
       <p class="eyebrow">КРИТЕРИИ</p>
       <h2>Критерии отбора видео</h2>
+      <div class="table-split">
       <div class="table-wrap">
         <table>
+          <colgroup><col style="width:22%"><col style="width:39%"><col style="width:39%"></colgroup>
           <thead><tr><th>Параметр</th><th class="za">Подходит</th><th class="protiv">Не подходит</th></tr></thead>
           <tbody>
             <tr id="crit-dlitelnost-video"><td>Длительность видео</td><td class="za">До 30 минут включительно.</td><td class="protiv">Длиннее 30 минут.</td></tr>
             <tr id="crit-dlitelnost-dvizheniya"><td>Длительность движения</td><td class="za">От 5 до 60 секунд.</td><td class="protiv">Короче 5 секунд или длиннее 60 секунд (кроме исключения ниже*).</td></tr>
-            <tr id="crit-skleyki"><td>Склейки</td><td class="za">Все 5 секунд показа движения — непрерывно, без монтажных склеек и переходов. Склейки в других местах ролика не мешают: достаточно одного непрерывного фрагмента с движением от 5 секунд. Ориентируйтесь на таймер под видео (у шортса — наведите курсор на полосу воспроизведения, появится время).</td><td class="protiv">Внутри этих 5 секунд есть склейка или переход.</td></tr>
+            <tr id="crit-skleyki"><td>Склейки</td><td class="za">Все 5 секунд показа движения — непрерывно, без монтажных склеек и переходов. Склейки в других местах ролика не мешают: достаточно одного непрерывного фрагмента с движением от 5 секунд.</td><td class="protiv">Внутри этих 5 секунд есть склейка или переход.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-media">
+        <div class="example-grid">
+          <figure style="margin:0;">
+            <img src="assets/timer1.png" alt="Таймер под видео — текущее время и длительность ролика" style="display:block; max-width:100%; border-radius:var(--radius-s); border:1px solid var(--line);">
+            <figcaption class="img-caption">Таймер под видео — ориентируйтесь на него, чтобы отследить непрерывный фрагмент с движением от 5 секунд.</figcaption>
+          </figure>
+          <figure style="margin:0;">
+            <img src="assets/timer2.png" alt="Полоса воспроизведения шортса — при наведении курсора появляется время" style="display:block; max-width:100%; border-radius:var(--radius-s); border:1px solid var(--line);">
+            <figcaption class="img-caption">У шортса наведите курсор на полосу воспроизведения — появится время.</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <colgroup><col style="width:22%"><col style="width:39%"><col style="width:39%"></colgroup>
+          <tbody>
             <tr id="crit-isklyuchenie-2sek"><td>*Исключение из строки выше — видео от 2 сек</td><td class="za">Видео короче 5 сек, но показанное действие в его рамках полностью завершено. В комплекте допустимо только одно такое короткое видео.</td><td class="protiv">Видео короче 5 сек, и действие обрывается на середине; либо таких коротких видео в комплекте больше одного.</td></tr>
             <tr id="crit-razlichimost-lyudey"><td>Различимость людей</td><td class="za">Человек, выполняющий движение, хорошо виден и различим, виден полностью.</td><td class="protiv">Человек снят издалека; один человек теряется в толпе (например, трибуны на матче); в кадре видна только часть тела (например, только ноги).</td></tr>
             <tr id="crit-neskolko-chelovek"><td>Несколько человек в кадре</td><td class="za">В кадре несколько человек, но хотя бы один чётко выполняет движение, остальные — просто на фоне.</td><td class="protiv">Непонятно, кто из людей в кадре выполняет движение.</td></tr>
@@ -163,6 +186,7 @@
             <tr id="crit-blochnost"><td>Блочность</td><td class="za">Эталонное видео (поле 1) проходит чек-лист — не больше 2 «против» из 5.</td><td class="protiv">Эталонное видео не проходит чек-лист — 3 и более «против» из 5. См. страницу «<a href="blockiness.html">Блочность</a>».</td></tr>
           </tbody>
         </table>
+      </div>
       </div>
 
       <h3 id="corner-cases">Корнер-кейсы</h3>
