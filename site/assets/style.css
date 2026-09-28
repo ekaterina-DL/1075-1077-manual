@@ -272,7 +272,6 @@ code{
 .callout.info .callout-title{color:var(--teal-dark);}
 .callout.warn{border-left-color:var(--amber); background:var(--amber-soft);}
 .callout.warn .callout-title{color:var(--amber);}
-.warn-sign{display:inline-block; width:1.2em; height:1.2em; vertical-align:-0.22em; margin-right:4px;}
 .callout.danger{border-left-color:var(--red); background:var(--red-soft);}
 .callout.danger .callout-title{color:var(--red);}
 .callout.ok{border-left-color:var(--ok); background:var(--ok-soft);}
