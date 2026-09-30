@@ -108,6 +108,8 @@ window.SITE_SEARCH_INDEX = [
     keywords: "идентичность 100% похожи но не идентичны" },
   { page: "criteria.html", anchor: "crit-proishozhdenie", title: "Критерий: происхождение видео", section: "Критерии отбора",
     keywords: "ии нейросеть сгенерировано обработано реальная камера" },
+  { page: "criteria.html", anchor: "crit-zapreshchennyi-kontent", title: "Критерий: содержание видео (запрещённый контент)", section: "Критерии отбора",
+    keywords: "курение алкоголь распитие спиртное запрещённые вещества наркотики насилие не собираем не берём все заявки" },
   { page: "criteria.html", anchor: "crit-blochnost", title: "Критерий: блочность", section: "Критерии отбора",
     keywords: "не откровенно битое эталонное видео чек-лист больше не требуется" },
   { page: "criteria.html", anchor: "crit-polosy", title: "Критерий: технический артефакт (распад на полосы)", section: "Критерии отбора",
